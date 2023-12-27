@@ -14,6 +14,11 @@ export default function Document() {
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="ca-pub-1428580342799313" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428580342799313"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body>
         <Main />
