@@ -25,7 +25,7 @@ export default function Document() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428580342799313"
           crossOrigin="anonymous"
-        ></script>
+        />
 
         <ins
           className="adsbygoogle"
@@ -34,7 +34,7 @@ export default function Document() {
           data-ad-slot="3359387395"
           data-ad-format="auto"
           data-full-width-responsive="true"
-        ></ins>
+        />
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         <Main />
         <NextScript />
