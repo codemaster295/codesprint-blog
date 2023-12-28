@@ -20,7 +20,7 @@ export const ArticleTileGrid = ({ articles, className, ...props }: ArticleTileGr
       {articles.map((article, index) => {
         return article ? (
           <>
-            <ArticleTile key={index} article={article} />;
+            <ArticleTile key={index} article={article} />
             <script
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428580342799313"
