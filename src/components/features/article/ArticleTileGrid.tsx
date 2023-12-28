@@ -18,7 +18,25 @@ export const ArticleTileGrid = ({ articles, className, ...props }: ArticleTileGr
       {...props}
     >
       {articles.map((article, index) => {
-        return article ? <ArticleTile key={index} article={article} /> : null;
+        return article ? (
+          <>
+            <ArticleTile key={index} article={article} />;
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428580342799313"
+              crossOrigin="anonymous"
+            />
+            <ins
+              className="adsbygoogle"
+              style={{ display: 'block' }}
+              data-ad-format="fluid"
+              data-ad-layout-key="+2u+q3-10-dq+yi"
+              data-ad-client="ca-pub-1428580342799313"
+              data-ad-slot="1822944440"
+            />
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </>
+        ) : null;
       })}
     </div>
   ) : null;
