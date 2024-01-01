@@ -15,7 +15,6 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   const blogPost = useContentfulLiveUpdates(props.blogPost);
   const relatedPosts = blogPost?.relatedBlogPostsCollection?.items;
-
   if (!blogPost || !relatedPosts) return null;
 
   return (
@@ -54,6 +53,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale, draftMode
     ]);
 
     const blogPost = blogPageData.pageBlogPostCollection?.items[0];
+    console.log(blogPost, 'blogPost');
     const landingPage = landingPageData.pageLandingCollection?.items[0];
 
     const isFeatured = landingPage?.featuredBlogPost?.slug === blogPost?.slug;

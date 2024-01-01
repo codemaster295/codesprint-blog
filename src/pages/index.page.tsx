@@ -56,7 +56,9 @@ export const getStaticProps: GetStaticProps = async ({ locale, draftMode: previe
       order: PageBlogPostOrder.PublishedDateDesc,
       where: {
         slug_not: page?.featuredBlogPost?.slug,
+        contentfulMetadata: { tags: { id_contains_all: ['blog'] } },
       },
+
       preview,
     });
     const posts = blogPostsData.pageBlogPostCollection?.items;

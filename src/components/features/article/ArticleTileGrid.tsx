@@ -21,7 +21,7 @@ export const ArticleTileGrid = ({ articles, className, ...props }: ArticleTileGr
         return article ? (
           <>
             <ArticleTile key={index} article={article} />
-            <script
+            {/* <script
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428580342799313"
               crossOrigin="anonymous"
@@ -34,7 +34,7 @@ export const ArticleTileGrid = ({ articles, className, ...props }: ArticleTileGr
               data-ad-client="ca-pub-1428580342799313"
               data-ad-slot="1822944440"
             />
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
           </>
         ) : null;
       })}

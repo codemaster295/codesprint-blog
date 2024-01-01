@@ -16,10 +16,11 @@ const App = ({ Component, pageProps }: AppProps) => {
     <ContentfulLivePreviewProvider
       enableInspectorMode={pageProps.previewActive}
       enableLiveUpdates={pageProps.previewActive}
-      locale={locale || 'en-US'}>
+      locale={locale || 'en-US'}
+    >
       <>
         <main className={`${urbanist.variable} font-sans`}>
-          <Layout>
+          <Layout font={urbanist}>
             <Component {...pageProps} />
           </Layout>
         </main>
